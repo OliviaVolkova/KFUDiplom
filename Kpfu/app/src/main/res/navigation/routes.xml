@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/routes"
+    app:startDestination="@id/fragmentMenu">
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.kfu_app.presentation.profile.ProfileFragment"
+        android:label="ProfileFragment">
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMenu"
+        android:name="com.example.kfu_app.presentation.fragments.main.MainFragment"
+        android:label="MenuFragment">
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.kfu_app.presentation.fragments.navigationDrawer.ContactsFragment"
+        android:label="ContactsFragment" />
+    <fragment
+        android:id="@+id/institutesFragment"
+        android:name="com.example.kfu_app.presentation.fragments.Institutes.InstitutesFragment" />
+
+    <fragment
+        android:id="@+id/enteringFragment"
+        android:name="com.example.kfu_app.presentation.fragments.entering.EnteringFragment" />
+
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.kfu_app.presentation.fragments.webView.WebViewFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/statementsFragment"
+        android:name="com.example.kfu_app.presentation.fragments.navigationDrawer.statements.StatementsFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.kfu_app.presentation.fragments.navigationDrawer.schedule.ScheduleFragment">
+    </fragment>
+</navigation>

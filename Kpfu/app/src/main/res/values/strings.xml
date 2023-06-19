@@ -1,0 +1,80 @@
+<resources>
+    <string name="run">Run</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_in_to_continue">Для продолжения необходимо войти</string>
+    <string name="name">Name</string>
+    <string name="update">Обновить</string>
+    <string name="runs">Забеги</string>
+    <string name="users">Users</string>
+    <string name="statistics">Statistics</string>
+    <string name="permission_text">Application needs location permission to continue</string>
+    <string name="start">Start</string>
+    <string name="subscribe">subscribe</string>
+    <string name="stop">stop</string>
+    <string name="unsubscribe">unsubscribe</string>
+    <string name="back">back</string>
+    <string name="accept">Принять</string>
+    <string name="cancel">отмена</string>
+    <string name="date_time">Дата и время: </string>
+    <string name="distance">Дистанция: </string>
+    <string name="run_time">Время пробежки: </string>
+    <string name="avg_speed">Средняя скорость: </string>
+
+    <string name="entering_main_text">КОНТАКТЫ ПРИЕМНОЙ КОМИССИИ</string>
+
+
+    <string name="entering_kazan">Приемная комиссия КФУ (Казань)</string>
+    <string name="secretary_kazan">Ответственный секретарь приемной комиссии: \n \n Бибик Александр Анатольевич.</string>
+    <string name="contacts_kazan"> Телефон: 8-843-292-73-40 \n E-mail:  priem@kpfu.ru \n Сайт: https://admissions.kpfu.ru</string>
+    <string name="address_kazan">Адрес: 420008, РТ, г. Казань, ул. Кремлевская, д. 35, каб. 114, 115 \n \nПочтовый адрес: 420008, РТ, г. Казань, ул. Кремлевская, д. 18 (для приемной комиссии)
+\n \nРежим работы: понедельник - пятница с 8:00 до 17:00 часов (12:00-13:00 обед)</string>
+    <string name="vk_text_kazan">Вконтакте</string>
+    <string name="tg_text_kazan">Телеграм</string>
+    <string name="tg_chat_text_kazan">Телеграм чат</string>
+
+
+    <string name="entering_elabuga">Приемная комиссия Елабужского института КФУ</string>
+    <string name="secretary_elabuga">Заместитель ответственного секретаря приемной комиссии: \n \n Ошкина Алеся Геннадьевна</string>
+    <string name="contacts_elabuga"> Телефон: 8-855-577-55-62 \n E-mail:  pkefkfu@gmail.com \n Сайт: https://admissions.kpfu.ru</string>
+    <string name="address_elabuga">Адрес: 423604, РТ, г. Елабуга, ул. Казанская, д.89, каб. 16 \n \nПочтовый адрес: 423604, РТ, г. Елабуга, ул. Казанская, д.89, каб. 16 (для приемной комиссии)
+\n \nРежим работы: понедельник - пятница с 8 до 17 часов (12 - 13 обед)</string>
+
+
+    <string name="entering_chelni">Приемная комиссия Набережночелнинского института КФУ</string>
+    <string name="secretary_chelni">Заместитель ответственного секретарь приемной комиссии: \n \nРябов Евгений Александрович</string>
+    <string name="contacts_chelni"> Телефон: 8-855-258-99-66 \n E-mail:  priem-chelny@kpfu.ru \n Сайт: https://admissions.kpfu.ru</string>
+    <string name="address_chelni">Адрес: РТ, г. Набережные Челны,  пр. Мира, 13А (Спорткомплекс), каб. 5 \n \nПочтовый адрес: 423812, Республика Татарстан, г.Набережные Челны, пр. Сююмбике, 10А (11/29),  (для приемной комиссии)
+\n \nРежим работы: понедельник - пятница с 8 до 17 часов (12 - 13 обед) \n</string>
+
+    <string name="reg_abiturient_text">Регистрация абитуриентов происходит на сайте:</string>
+    <string name="go_on_site">Перейти на сайт</string>
+
+    <string name="statement_maintext">Уважаемые студенты! \n
+  Информация о готовности справки будет направлена Вам на указанную электронную почту. Время изготовления справки - 2 рабочих дня. Справку по месту требования можно забрать в деканате, в пенсионный фонд - в главном здании КФУ (Кремлевская,18), кабинет 134 (с 9.00 до 12.00 и с 13.00 до 16.00).</string>
+    <string name="statement_fio">1. ФИО заявителя</string>
+    <string name="statement_institutes">2. Институт/факультет</string>
+    <string name="statement_email">3. E-mail (для отправки информации о готовности справки)</string>
+    <string name="statement_type">4. Тип справки</string>
+    <string name="statement_count">5. Количество справок</string>
+    <string name="statement_personaldata">6. Положения Федерального закона от 27.07.2006 №152-ФЗ "О персональных данных" об обеспечении конфиденциальности персональных данных мне известны.</string>
+    <string-array name="spinner_items">
+        <item>All users</item>
+        <item>You are subscribed</item>
+    </string-array>
+
+    <string name="schedule_exams">Календарь занятий</string>
+    <string name="schedule_button">Посмотреть занятия</string>
+    <string name="app_name">KFU</string>
+
+    <string name="sure">Выйти из профиля?</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="signin">Войти</string>
+    <string name="goToMenu">Главное меню</string>
+</resources>

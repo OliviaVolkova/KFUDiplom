@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/kfu_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/iv_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/btn_sign_out"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_baseline_exit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_light_transpanent"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_profile_icon"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ll_info" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:maxLines="3"
+                    android:textAlignment="center"
+                    android:textColor="@color/kfu_blue_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_profile_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!--    <androidx.appcompat.widget.AppCompatButton-->
+            <!--        android:id="@+id/btn_sign_out"-->
+            <!--        style="@style/GrayButtonStyle"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_marginTop="16dp"-->
+            <!--        android:text="@string/sign_out"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@id/ll_info" />-->
+
+            <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--        android:id="@+id/cl_birthdate"-->
+            <!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--        android:layout_height="match_parent"-->
+            <!--        android:layout_marginTop="4dp"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/ll_info"-->
+            <!--        android:layout_width="match_parent">-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_birthday_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/blue_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_birthday_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:text="Дата рождения:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/iv_birthday_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_birthday_background"
+                    app:layout_constraintTop_toTopOf="@id/iv_birthday_background"/>
+
+                <TextView
+                    android:id="@+id/tv_birthday_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingEnd="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_dark"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_birthday_background"
+                    app:layout_constraintEnd_toEndOf="@id/iv_birthday_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_birthday_background"/>
+
+                <ImageView
+                    android:id="@+id/iv_citizenship_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/blue_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_birthday_background"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_citizenship_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:text="Гражданство:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/iv_citizenship_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_citizenship_background"
+                    app:layout_constraintTop_toTopOf="@id/iv_citizenship_background"/>
+
+                <TextView
+                    android:id="@+id/tv_citizenship_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingEnd="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_dark"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_citizenship_background"
+                    app:layout_constraintEnd_toEndOf="@id/iv_citizenship_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_citizenship_background"/>
+
+                <ImageView
+                    android:id="@+id/iv_placeofbirth_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/blue_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_citizenship_background"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_placeofbirth_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:text="Место рождения:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/iv_placeofbirth_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_placeofbirth_background"
+                    app:layout_constraintTop_toTopOf="@id/iv_placeofbirth_background"/>
+
+                <TextView
+                    android:id="@+id/tv_placeofbirth_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingEnd="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_dark"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_placeofbirth_background"
+                    app:layout_constraintEnd_toEndOf="@id/iv_placeofbirth_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_placeofbirth_background"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_institute_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/blue_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_placeofbirth_background"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_institute_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:text="Институт:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/iv_institute_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_institute_background"
+                    app:layout_constraintTop_toTopOf="@id/iv_institute_background"/>
+
+                <TextView
+                    android:id="@+id/tv_institute_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingEnd="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_dark"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_institute_background"
+                    app:layout_constraintEnd_toEndOf="@id/iv_institute_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_institute_background"/>
+
+                <ImageView
+                    android:id="@+id/iv_groupnumber_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/blue_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_institute_background"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_groupnumber_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:text="Номер группы:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/iv_groupnumber_background"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/iv_groupnumber_background"
+                    app:layout_constraintTop_toTopOf="@id/iv_groupnumber_background"/>
+
+                <TextView
+                    android:id="@+id/tv_groupnumber_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingEnd="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_dark"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_groupnumber_background"
+                    app:layout_constraintEnd_toEndOf="@id/iv_groupnumber_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_groupnumber_background"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_librarycardnumber_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/blue_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_groupnumber_background"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_librarycardnumber_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:text="Номер читательского билета:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/iv_librarycardnumber_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_librarycardnumber_background"
+                    app:layout_constraintTop_toTopOf="@id/iv_librarycardnumber_background"/>
+
+                <TextView
+                    android:id="@+id/tv_librarycardnumber_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingEnd="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_dark"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_librarycardnumber_background"
+                    app:layout_constraintEnd_toEndOf="@id/iv_librarycardnumber_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_librarycardnumber_background"/>
+
+                <ImageView
+                    android:id="@+id/iv_personalid_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/blue_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_librarycardnumber_background"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv_personalid_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:text="Идентификатор:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/iv_personalid_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_personalid_background"
+                    app:layout_constraintTop_toTopOf="@id/iv_personalid_background"/>
+
+                <TextView
+                    android:id="@+id/tv_personalid_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp"
+                    android:paddingEnd="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_dark"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_personalid_background"
+                    app:layout_constraintEnd_toEndOf="@id/iv_personalid_background"
+                    app:layout_constraintStart_toStartOf="@id/iv_personalid_background"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
